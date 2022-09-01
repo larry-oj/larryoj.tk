@@ -162,6 +162,12 @@ body {
     color: #457b9d;
     border-color: #457b9d;
   }
+  .anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
