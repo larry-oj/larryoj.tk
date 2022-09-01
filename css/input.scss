@@ -85,8 +85,10 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
 
         &#me {
+            flex-direction: row;
             padding-bottom: 0;
             flex-wrap: wrap-reverse;
             gap: $padding-huge;
@@ -114,8 +116,6 @@ body {
         }
 
         &#skills {
-            flex-direction: column;
-
             div {
                 padding-top: $padding-small;
                 display: flex;
@@ -143,8 +143,6 @@ body {
         }
 
         &#edu {
-            flex-direction: column;
-
             div {
                 padding-top: $padding-large;
                 max-width: $screen-large;
@@ -182,6 +180,10 @@ body {
             }
         }
 
+        &#projects {
+            
+        }
+
         &#me, &#edu, &#contact {
             background-color: $secondary-color;
         }
@@ -194,6 +196,7 @@ body {
     a {
         color: $accent-color;
         text-decoration: none;
+        cursor: pointer;
 
         &:hover {
             color: $dark-accent-color;
@@ -256,6 +259,67 @@ body {
         position: relative;
         top: -60px;
         visibility: hidden;
+    }
+
+    .projects {
+        width: 100%;
+        // max-width: $screen-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: $padding-large;
+        padding-top: $padding-large;
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: $secondary-color;
+        padding: $padding-huge;
+        border-radius: 20px;     
+        width: 370px;
+        min-height: 450px;
+        gap: $padding-small;
+
+        p {
+            padding: 0 $padding-medium 0 $padding-medium;
+            text-align: justify;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        
+    }
+
+    .tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        span {
+            font-size: 14px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $main-color;
+            border-radius: 10px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $padding-medium;
     }
 }
 

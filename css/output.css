@@ -59,8 +59,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   section#me {
+    flex-direction: row;
     padding-bottom: 0;
     flex-wrap: wrap-reverse;
     gap: 30px;
@@ -81,9 +83,6 @@ body {
     gap: 15px;
     flex-direction: row;
     padding-top: 15px;
-  }
-  section#skills {
-    flex-direction: column;
   }
   section#skills div {
     padding-top: 10px;
@@ -106,9 +105,6 @@ body {
   }
   section#skills div div ul {
     width: 100%;
-  }
-  section#edu {
-    flex-direction: column;
   }
   section#edu div {
     padding-top: 20px;
@@ -150,6 +146,7 @@ body {
   a {
     color: #457b9d;
     text-decoration: none;
+    cursor: pointer;
   }
   a:hover {
     color: #1d3557;
@@ -202,6 +199,57 @@ body {
     position: relative;
     top: -60px;
     visibility: hidden;
+  }
+  .projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  .project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a8dadc;
+    padding: 30px;
+    border-radius: 20px;
+    width: 370px;
+    min-height: 450px;
+    gap: 10px;
+  }
+  .project-card p {
+    padding: 0 15px 0 15px;
+    text-align: justify;
+  }
+  .project-card p a {
+    text-decoration: underline;
+  }
+  .tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tags span {
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1faee;
+    border-radius: 10px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
   }
 }
 
