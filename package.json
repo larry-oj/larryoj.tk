@@ -1,0 +1,20 @@
+{
+  "name": "larryoj.tk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:build": "npx sass --watch css/input.scss css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larry-oj/larryoj.tk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larry-oj/larryoj.tk/issues"
+  },
+  "homepage": "https://github.com/larry-oj/larryoj.tk#readme"
+}

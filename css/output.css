@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./fonts/Comfortaa-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("./fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NatoSansAvestan";
+  src: url("./fonts/NotoSansAvestan-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NatoSansAvestan", sans-serif;
+  font-size: 16px;
+  color: #457b9d;
+}
+
+@media only screen and (min-width: 0) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background-color: #f1faee;
+  }
+  header div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header div nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section {
+    padding: 15px 15px 15px 15px;
+  }
+  section#me {
+    padding: 30px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+  }
+  section#me img {
+    width: 100%;
+    max-width: 430px;
+  }
+  section#me div h1, section#me div h2 {
+    text-align: center;
+  }
+  section#me div p {
+    padding-top: 15px;
+    max-width: 430px;
+  }
+  section#me div div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    padding-top: 15px;
+  }
+  section#me, section#edu {
+    background-color: #a8dadc;
+  }
+  a {
+    color: #457b9d;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #1d3557;
+  }
+  h1 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 48px;
+  }
+  h2 {
+    font-family: "RobotoMono", sans-serif;
+    font-size: 24px;
+  }
+  .text-bold {
+    font-weight: 900;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #f1faee;
+    background-color: #457b9d;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #457b9d;
+    gap: 5px;
+  }
+  .btn:hover {
+    background-color: #f1faee;
+    color: #457b9d;
+    border-color: #457b9d;
+  }
+}
+@media only screen and (min-width: 640px) {
+  header div {
+    justify-content: flex-end;
+  }
+  header div nav {
+    width: 640px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header div {
+    width: 1024px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,184 @@
+$main-color: #f1faee;
+$secondary-color: #a8dadc;
+$accent-color: #457b9d;
+$dark-accent-color: #1d3557;
+$important-color: #e63946;
+
+$header-size: 48px;
+$subheader-size: 24px;
+$section-text-size: 24px;
+$text-size: 16px;
+
+$padding-small: 10px;
+$padding-medium: 15px;
+$padding-large: 20px;
+$padding-huge: 30px;
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("./fonts/Comfortaa-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url("./fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NatoSansAvestan";
+    src: url("./fonts/NotoSansAvestan-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "NatoSansAvestan", sans-serif;
+    font-size: $text-size;
+    color: $accent-color;
+}
+
+@media only screen and (min-width: 0) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0px 0px 5px gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $padding-small 0 $padding-small 0;
+        background-color: $main-color;
+
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    }
+
+    section {
+        padding: $padding-medium $padding-medium $padding-medium $padding-medium;
+
+        &#me {
+            padding: $padding-huge $padding-medium 0 $padding-medium;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+            gap: $padding-huge;
+
+            img {
+                width: 100%;
+                max-width: 430px;
+            }
+
+            div {
+                h1, h2 {
+                    text-align: center;
+                }
+                p {
+                    padding-top: $padding-medium;
+                    max-width: 430px;
+                }
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: $padding-medium;
+                    flex-direction: row;
+                    padding-top: $padding-medium;
+                }
+            }
+        }
+
+        &#me, &#edu {
+            background-color: $secondary-color;
+        }
+    }
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-accent-color;
+        }
+    }
+
+    h1 {
+        font-family: "Comfortaa", sans-serif;
+        font-size: $header-size;
+    }
+
+    h2 {
+        font-family: "RobotoMono", sans-serif;
+        font-size: $subheader-size;
+    }
+
+    .text-bold {
+        font-weight: 900;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $text-size;
+        color: $main-color;
+        background-color: $accent-color;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 2px solid $accent-color;
+        gap: 5px;
+
+        &:hover {
+            background-color: $main-color;
+            color: $accent-color;
+            border-color: $accent-color;
+        }
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    header {
+        div {
+            justify-content: flex-end;
+
+            nav {
+                width: 640px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        div {
+            width: 1024px;
+        }
+    }
+}
