@@ -56,12 +56,12 @@ body {
   }
   section {
     padding: 30px 30px 30px 30px;
-  }
-  section#me {
-    padding-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  section#me {
+    padding-bottom: 0;
     flex-wrap: wrap-reverse;
     gap: 30px;
   }
@@ -85,6 +85,34 @@ body {
     flex-direction: row;
     padding-top: 15px;
   }
+  section#skills {
+    flex-direction: column;
+  }
+  section#skills h1 {
+    text-align: center;
+  }
+  section#skills div {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 1024px;
+  }
+  section#skills div div {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  section#skills div div ul {
+    width: 100%;
+  }
   section#me, section#edu, section#contact {
     background-color: #a8dadc;
   }
@@ -105,6 +133,13 @@ body {
   h2 {
     font-family: "RobotoMono", sans-serif;
     font-size: 24px;
+  }
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  ul ul {
+    margin-left: 20px;
   }
   .text-bold {
     font-weight: 900;

@@ -14,6 +14,10 @@ $padding-medium: 15px;
 $padding-large: 20px;
 $padding-huge: 30px;
 
+$screen-small: 640px;
+$screen-medium: 769px;
+$screen-large: 1024px;
+
 @font-face {
     font-family: "Comfortaa";
     src: url("./fonts/Comfortaa-Regular.ttf") format("truetype");
@@ -61,14 +65,14 @@ body {
 
         div {
             width: 100%;
-            max-width: 1024px;
+            max-width: $screen-large;
             display: flex;
             justify-content: flex-end;
             align-items: center;
 
             nav {
                 width: 100%;
-                max-width: 640px;
+                max-width: $screen-small;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -78,12 +82,12 @@ body {
 
     section {
         padding: $padding-huge $padding-huge $padding-huge $padding-huge;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &#me {
             padding-bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             flex-wrap: wrap-reverse;
             gap: $padding-huge;
 
@@ -108,6 +112,39 @@ body {
                     gap: $padding-medium;
                     flex-direction: row;
                     padding-top: $padding-medium;
+                }
+            }
+        }
+
+        &#skills {
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+            }  
+
+            div {
+                padding-top: $padding-small;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: $padding-huge;
+                width: 100%;
+                max-width: $screen-large;
+
+                div {
+                    width: 100%;
+                    max-width: 250px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: $padding-medium;
+
+                    ul {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -140,6 +177,15 @@ body {
         font-size: $subheader-size;
     }
 
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+
+        ul {
+            margin-left: $padding-large;
+        }
+    }
+
     .text-bold {
         font-weight: 900;
     }
@@ -165,14 +211,14 @@ body {
     }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: $screen-small) {
 
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: $screen-medium) {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: $screen-large) {
 
 }
