@@ -83,6 +83,7 @@ body {
     gap: 15px;
     flex-direction: row;
     padding-top: 15px;
+    flex-wrap: wrap;
   }
   section#skills div {
     padding-top: 10px;
@@ -136,6 +137,22 @@ body {
   }
   section#edu div div ul {
     padding-left: 15px;
+  }
+  section#contact div {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  section#contact div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
   }
   section#me, section#edu, section#contact {
     background-color: #a8dadc;

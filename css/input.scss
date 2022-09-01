@@ -111,6 +111,7 @@ body {
                     gap: $padding-medium;
                     flex-direction: row;
                     padding-top: $padding-medium;
+                    flex-wrap: wrap;
                 }
             }
         }
@@ -180,8 +181,24 @@ body {
             }
         }
 
-        &#projects {
-            
+        &#contact {
+            div {
+                padding-top: $padding-large;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: $padding-medium;
+
+                p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: $padding-medium;
+                    font-size: $section-text-size;
+                }
+            }
         }
 
         &#me, &#edu, &#contact {
