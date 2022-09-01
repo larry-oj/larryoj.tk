@@ -314,12 +314,11 @@ body {
     .skills-card {
         width: 100%;
         max-width: 280px;
-        height: 375px;
+        height: 370px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        gap: $padding-medium;
         background-color: $light-shades;
         color: $dark-shades;
         padding: $padding-large;
@@ -333,6 +332,7 @@ body {
         img {
             height: 100%;
             width: 100%;
+            height: auto;
             object-fit: cover;
             border-radius: 20px;
             background-color: $light-accent;
@@ -361,7 +361,6 @@ body {
         border-radius: 20px;     
         width: 370px;
         height: 450px;
-        gap: $padding-small;
         margin-top: 50px;
         box-shadow: $shadow;
 
