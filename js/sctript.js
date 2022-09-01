@@ -1,9 +1,9 @@
 const phone = document.getElementById('phone');
 phone.getElementsByTagName('a')[0].onclick = function () {
-    phone.innerHTML = '+380 (50) 770-64-34';
+    phone.innerHTML = '<a href="tel:+380500000000">+380500000000</a>';
 }
 
 const email = document.getElementById('email');
 email.getElementsByTagName('a')[0].onclick = function () {
-    email.innerHTML = 'dev.vladyslav@gmail.com';
+    email.innerHTML = '<a href="mailto:dev.vladyslav@gmail.com">dev.vladyslav@gmail.com</a>';
 }

@@ -17,13 +17,13 @@
                 <a href="#skills-anchor">Skills</a>
                 <a href="#edu-anchor">Education</a>
                 <a class="text-bold" href="#projects-anchor">Projects</a>
-                <a class="btn" style="width: 70px;" href="#contact-anchor"><i class="fa fa-envelope"></i></a>
+                <a class="btn btn-light" style="width: 70px;" href="#contact-anchor"><i class="fa fa-envelope"></i></a>
             </nav>
         </div>
     </header>
     <a class="anchor" id="me-anchor"></a>
     <section id="me">
-        <img src="img/me-blue.png" alt="my-photo">
+        <img src="img/me-blue-2.png" alt="my-photo">
         <div>
             <h1>Vladyslav Panov</h1>
             <h2>Junior .NET developer</h2>
@@ -31,15 +31,27 @@
             <div>
                 <a class="btn" href="https://github.com/larry-oj"><i class="fa fa-github"></i>Github</a>
                 <a class="btn" href="https://www.linkedin.com/in/dev-vladyslav/"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
-                <a class="btn" href="#"><i class="fa fa-file-pdf-o"></i>Resume PDF</a>
+                <a class="btn btn-accent" href="#"><i class="fa fa-file-pdf-o"></i>Resume PDF</a>
             </div>
         </div>
     </section>
     <a class="anchor" id="skills-anchor"></a>
     <section id="skills">
         <h1>My Skills</h1>
-        <div>
-            <div>
+        <div class="skills">
+            <div class="skills-card">
+                <h2>Soft skills</h2>
+                <img src="img/soft-skills.png">
+                <ul>
+                    <li>Accountability</li>
+                    <li>Adaptability</li>
+                    <li>Problem solving</li>
+                    <li>Self-Learning</li>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+            <div class="skills-card">
                 <h2>Hard skills</h2>
                 <ul>
                     <li>C# 10 & .NET 6</li>
@@ -61,19 +73,9 @@
                     <li>JavaScript + Node.js (Basic)</li>
                 </ul>
             </div>
-            <div>
-                <h2>Soft skills</h2>
-                <ul>
-                    <li>Accountability</li>
-                    <li>Adaptability</li>
-                    <li>Problem solving</li>
-                    <li>Self-Learning</li>
-                    <li>Teamwork</li>
-                    <li>Communication</li>
-                </ul>
-            </div>
-            <div>
+            <div class="skills-card">
                 <h2>Languages</h2>
+                <img src="img/group-people-talking.jpg">
                 <ul>
                     <li>English - B2</li>
                     <li>Ukrainian - Native</li>
@@ -105,55 +107,33 @@
         <h1>Projects</h1>
         <div class="projects">
             <div class="project-card">
-                <h2>Razor Pages Messenger</h2>
-                <p>A simple messenger app. Allows registering accounts and sending messages between accounts. Built wiht SignalR and Identity, triple-layered architecture.</p>
-                <div class="tags">
-                    <span>ASP.NET Core</span>
-                    <span>SignalR</span>
-                    <span>Identity</span>
-                    <span>OOP</span>
-                    <span>Dependency Injection</span>
-                    <span>Razor Pages</span>
-                    <span>EntityFrameworkCore</span>
-                </div>
-                <div class="buttons">
-                    <a class="btn" href="#projects-anchor"><i class="fa fa-github"></i>Github</a>
-                    <a class="btn" href="#projects-anchor"><i class="fa fa-external-link"></i>Live preview</a>
-                </div>
-            </div>
-            <div class="project-card">
+                <img src="img/bot.gif">
                 <h2>Music Bot Telegram</h2>
                 <p>Telegram Bot that unilises my own API (listed here in projects). Built using <a>Worker Service Template</a>. Utilises triple-layered architecture.</p>
-                <div class="tags">
-                    <span>ASP.NET Core</span>
-                    <span>Worker Service</span>
-                    <span>OOP</span>
-                    <span>Dependency Injection</span>
-                    <span>IHostedService</span>
-                    <span>EntityFrameworkCore</span>
-                </div>
                 <div class="buttons">
                     <a class="btn" href="https://github.com/larry-oj/Music-Bot-Telegram"><i class="fa fa-github"></i>Github</a>
-                    <a class="btn" href="https://t.me/oj_musicbirdbot"><i class="fa fa-telegram"></i>Live preview</a>
+                    <a class="btn btn-accent" href="https://t.me/oj_musicbirdbot"><i class="fa fa-telegram"></i>Live preview</a>
                 </div>
             </div>
             <div class="project-card">
+                <img src="img/api.gif">
                 <h2>Music API</h2>
-                <p>API that can recognize, search and download music. Utilises multiple public APIs, as well as <a href="https://github.com/larry-oj/YouTube-To-MP3">my own YouTube to
-                        .mp3 converter <i class="fa fa-github"></i></a>. Live preview built as a telegram bot</p>
-                <div class="tags">
-                    <span>ASP.NET Core</span>
-                    <span>Web API</span>
-                    <span>OOP</span>
-                    <span>Dependency Injection</span>
-                    <span>IHostedService</span>
-                </div>
+                <p>API that can recognize, search and download music. Utilises multiple public APIs, as well as <a href="https://github.com/larry-oj/YouTube-To-MP3">my own YouTube to.mp3 converter <i class="fa fa-github"></i></a>. Live preview built as a telegram bot</p>
                 <div class="buttons">
                     <a class="btn" href="https://github.com/larry-oj/Music-API"><i class="fa fa-github"></i>Github</a>
-                    <a class="btn" href="https://t.me/oj_musicbirdbot"><i class="fa fa-telegram"></i>Live preview</a>
+                    <a class="btn btn-accent" href="https://t.me/oj_musicbirdbot"><i class="fa fa-telegram"></i>Live preview</a>
+                </div>
+            </div>     
+            <div class="project-card">
+                <img src="img/kpi.png">
+                <h2>Razor Pages Messenger</h2>
+                <p>A simple messenger app. Allows registering accounts and sending messages between accounts. Built wiht SignalR and
+                    Identity, triple-layered architecture.</p>
+                <div class="buttons">
+                    <a class="btn" href="#projects-anchor"><i class="fa fa-github"></i>Github</a>
+                    <a class="btn btn-accent" href="#projects-anchor"><i class="fa fa-external-link"></i>Live preview</a>
                 </div>
             </div>
-            
         </div>
     </section>
     <a class="anchor" id="contact-anchor"></a>
