@@ -83,8 +83,11 @@ body {
     flex-direction: row;
     padding-top: 15px;
   }
-  section#me, section#edu {
+  section#me, section#edu, section#contact {
     background-color: #a8dadc;
+  }
+  section#skills, section#projects {
+    background-color: #f1faee;
   }
   a {
     color: #457b9d;

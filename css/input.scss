@@ -110,8 +110,12 @@ body {
             }
         }
 
-        &#me, &#edu {
+        &#me, &#edu, &#contact {
             background-color: $secondary-color;
+        }
+
+        &#skills, &#projects {
+            background-color: $main-color;
         }
     }
 
