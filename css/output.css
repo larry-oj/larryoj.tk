@@ -53,10 +53,10 @@ body {
     align-items: center;
   }
   section {
-    padding: 15px 15px 15px 15px;
+    padding: 30px 30px 30px 30px;
   }
   section#me {
-    padding: 30px 15px 0 15px;
+    padding-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;

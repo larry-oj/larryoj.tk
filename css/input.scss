@@ -75,10 +75,10 @@ body {
     }
 
     section {
-        padding: $padding-medium $padding-medium $padding-medium $padding-medium;
+        padding: $padding-huge $padding-huge $padding-huge $padding-huge;
 
         &#me {
-            padding: $padding-huge $padding-medium 0 $padding-medium;
+            padding-bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
