@@ -61,12 +61,14 @@ body {
 
         div {
             width: 100%;
+            max-width: 1024px;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
 
             nav {
                 width: 100%;
+                max-width: 640px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -164,15 +166,7 @@ body {
 }
 
 @media only screen and (min-width: 640px) {
-    header {
-        div {
-            justify-content: flex-end;
 
-            nav {
-                width: 640px;
-            }
-        }
-    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -180,9 +174,5 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
-    header {
-        div {
-            width: 1024px;
-        }
-    }
+
 }

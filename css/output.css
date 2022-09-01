@@ -42,12 +42,14 @@ body {
   }
   header div {
     width: 100%;
+    max-width: 1024px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
   header div nav {
     width: 100%;
+    max-width: 640px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -124,19 +126,6 @@ body {
     background-color: #f1faee;
     color: #457b9d;
     border-color: #457b9d;
-  }
-}
-@media only screen and (min-width: 640px) {
-  header div {
-    justify-content: flex-end;
-  }
-  header div nav {
-    width: 640px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header div {
-    width: 1024px;
   }
 }
 
