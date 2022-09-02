@@ -279,15 +279,16 @@ body {
   }
   .project-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
     align-items: center;
     flex-direction: column;
     background-color: #F8F9F9;
     color: #304365;
     padding: 15px;
     border-radius: 20px;
-    width: 370px;
-    height: 450px;
+    width: 450px;
+    height: fit-content;
     margin-top: 50px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.402);
   }
@@ -297,6 +298,10 @@ body {
   }
   .project-card p a {
     text-decoration: underline;
+  }
+  .project-card h3 {
+    color: #F02597;
+    margin-top: -15px;
   }
   .project-card img {
     object-fit: cover;
@@ -314,15 +319,14 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    width: 100%;
   }
   .tags span {
-    font-size: 14px;
     padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F8F9F9;
     border-radius: 10px;
+    border: 2px solid #304365;
+    color: #304365;
+    background-color: #F8F9F9;
   }
   .buttons {
     display: flex;

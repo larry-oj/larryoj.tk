@@ -352,15 +352,16 @@ body {
 
     .project-card {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: $padding-medium;
         align-items: center;
         flex-direction: column;
         background-color: $light-shades;
         color: $dark-shades;
         padding: $padding-medium;
         border-radius: 20px;     
-        width: 370px;
-        height: 450px;
+        width: 450px;
+        height: fit-content;
         margin-top: 50px;
         box-shadow: $shadow;
 
@@ -371,6 +372,11 @@ body {
             a {
                 text-decoration: underline;
             }
+        }
+
+        h3 {
+            color: $dark-accent;
+            margin-top: -$padding-medium;
         }
 
         img {
@@ -390,16 +396,15 @@ body {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: $padding-small;
+        width: 100%;
 
         span {
-            font-size: 14px;
             padding: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $light-shades;
             border-radius: 10px;
+            border: 2px solid $dark-shades;
+            color: $dark-shades;
+            background-color: $light-shades;
         }
     }
 
@@ -409,16 +414,4 @@ body {
         align-items: center;
         gap: $padding-medium;
     }
-}
-
-@media only screen and (min-width: $screen-small) {
-
-}
-
-@media only screen and (min-width: $screen-medium) {
-
-}
-
-@media only screen and (min-width: $screen-large) {
-
 }

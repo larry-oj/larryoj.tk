@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="ico/logo.png">
-    <link rel="stylesheet" href="css/output.css?v=4">
+    <link rel="stylesheet" href="css/output.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Vladyslav Panov</title>
 </head>
@@ -39,9 +39,9 @@
     <section id="skills">
         <h1>My Skills</h1>
         <div class="skills">
-            <div class="skills-card">
-                <h2>Soft skills</h2>
+            <div class="card skills-card">
                 <img src="img/soft-skills.png">
+                <h2>Soft skills</h2>
                 <ul>
                     <li>Accountability</li>
                     <li>Adaptability</li>
@@ -51,7 +51,7 @@
                     <li>Communication</li>
                 </ul>
             </div>
-            <div class="skills-card">
+            <div class="card skills-card">
                 <h2>Hard skills</h2>
                 <ul>
                     <li>C# 10 & .NET 6</li>
@@ -73,9 +73,9 @@
                     <li>JavaScript + Node.js (Basic)</li>
                 </ul>
             </div>
-            <div class="skills-card">
-                <h2>Languages</h2>
+            <div class="card skills-card">
                 <img src="img/group-people-talking.jpg">
+                <h2>Languages</h2>
                 <ul>
                     <li>English - B2</li>
                     <li>Ukrainian - Native</li>
@@ -104,31 +104,41 @@
     </section>
     <a class="anchor" id="projects-anchor"></a>
     <section id="projects">
-        <h1>Projects</h1>
+        <h1>My Projects</h1>
         <div class="projects">
-            <div class="project-card">
+            <div class="card project-card">
                 <img src="img/bot.gif">
                 <h2>Music Bot Telegram</h2>
-                <p>Telegram Bot that unilises my own API (listed here in projects). Built using <a>Worker Service Template</a>. Utilises triple-layered architecture.</p>
+                <h3>Microservice of 3 services</h3>
+                <p>An easy to use Telegram bot that can recognize (shazam-like), search and create .mp3 files of your favourite music. Utilises my own <a><i class="fa fa-github"></i> Music API</a> and <a><i class="fa fa-github"></i> MP3 Converter</a>.</p>
+                <div class="tags">
+                    <span>ASP.NET Core</span>
+                    <span>EF Core</span>
+                    <span>LINQ</span>
+                    <span>IHostedService</span>
+                    <span>OOP Principles</span>
+                    <span>Triple-layered architecture</span>
+                </div>
                 <div class="buttons">
                     <a class="btn" href="https://github.com/larry-oj/Music-Bot-Telegram"><i class="fa fa-github"></i>Github</a>
                     <a class="btn btn-accent" href="https://t.me/oj_musicbirdbot"><i class="fa fa-telegram"></i>Live preview</a>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="img/api.gif">
-                <h2>Music API</h2>
-                <p>API that can recognize, search and download music. Utilises multiple public APIs, as well as <a href="https://github.com/larry-oj/YouTube-To-MP3">my own YouTube to.mp3 converter <i class="fa fa-github"></i></a>. Live preview built as a telegram bot</p>
-                <div class="buttons">
-                    <a class="btn" href="https://github.com/larry-oj/Music-API"><i class="fa fa-github"></i>Github</a>
-                    <a class="btn btn-accent" href="https://t.me/oj_musicbirdbot"><i class="fa fa-telegram"></i>Live preview</a>
-                </div>
-            </div>     
-            <div class="project-card">
+            </div>  
+            <div class="card project-card">
                 <img src="img/messenger.jpg">
                 <h2>Razor Pages Messenger</h2>
-                <p>A simple messenger app. Allows registering accounts and sending messages between accounts. Built wiht SignalR and
-                    Identity, triple-layered architecture.</p>
+                <p>A simple messenger app. Allows registering accounts and sending messages between accounts, holds message history.</p>
+                <div class="tags">
+                    <span>ASP.NET Core</span>
+                    <span>EF Core</span>
+                    <span>SignalR</span>
+                    <span>Identity</span>
+                    <span>Razor Pages</span>
+                    <span>LINQ</span>
+                    <span>IHostedService</span>
+                    <span>OOP Principles</span>
+                    <span>Triple-layered architecture</span>
+                </div>
                 <div class="buttons">
                     <a class="btn" href="#projects-anchor"><i class="fa fa-github"></i>Github</a>
                     <a class="btn btn-accent" href="#projects-anchor"><i class="fa fa-external-link"></i>Live preview</a>
