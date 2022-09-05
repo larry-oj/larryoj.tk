@@ -216,6 +216,10 @@ body {
     color: #99ABC7;
     border-color: #99ABC7;
   }
+  .btn-inactive:hover {
+    cursor: not-allowed;
+    user-select: none;
+  }
   .btn-light {
     color: #B1A1DA;
     background-color: #F8F9F9;

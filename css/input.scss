@@ -281,6 +281,13 @@ body {
         }
     }
 
+    .btn-inactive {
+        &:hover {
+            cursor: not-allowed;
+            user-select: none;
+        }
+    }
+
     .btn-light {
         color: $main-color;
         background-color: $light-shades;
